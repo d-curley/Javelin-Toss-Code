@@ -22,33 +22,11 @@ namespace OpenCVForUnityExample
         {
             setType (name);
             if (name == "red") {
-                //morning
-                //setHSVmin (new Scalar (0, 80, 180));
-                //setHSVmax (new Scalar (14, 255, 255));
-                //afternoon
-                //setHSVmin(new Scalar(120, 120, 90));
-               // setHSVmax(new Scalar(190, 255, 255));
-
-                //morning living room
                 setHSVmin (new Scalar (160, 120, 67));
                 setHSVmax (new Scalar (200, 255, 255));
-
-
             }
             if (name == "green")
             {
-                //morning
-                //setHSVmin (new Scalar (23, 91, 0));
-                //setHSVmax (new Scalar (91, 255, 127));
-
-                //afternoon
-               // setHSVmin(new Scalar(70, 53, 0));
-                //setHSVmax(new Scalar(111, 255, 55));
-
-                //night green
-                //setHSVmin(new Scalar(60, 88, 12));
-                //setHSVmax(new Scalar(95,181, 72));
-
                 //baby BLUE DAY
                 setHSVmin(new Scalar(95, 157, 65));
                 setHSVmax(new Scalar(118, 255, 255));
@@ -56,9 +34,10 @@ namespace OpenCVForUnityExample
                 //baby blue living room day
                 setHSVmin(new Scalar(90, 93, 18));
                 setHSVmax(new Scalar(107, 255, 255));
-
             }
         }
+
+        //OpenCV for Unity Asset Helper Methods
         public int getXPos () { return xPos;}
 
         public void setXPos (int x) {xPos = x; }
